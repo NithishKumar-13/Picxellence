@@ -1,0 +1,60 @@
+.blog {
+    @include centre-container();
+
+    &__heading {
+        text-align: center;
+        font-size: 4rem;
+
+        &::after {
+            content: '';
+            position: relative;
+            height: 3px;
+            width: 10rem;
+            display: block;
+            margin: 0 auto;
+            background-color: $color-sandal;
+        }
+    }
+
+    // &__card {
+    //     &:not(:last-child) {
+    //         @include respond(phone) {
+    //             margin-bottom: 5rem;
+    //         }
+    //     }
+    // }
+
+    &__container {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25ch,1fr));
+        column-gap: 5rem;
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }   
+
+    &__date-box {
+        margin-top: 2rem;
+    }
+
+    &__date {
+        font-size: 1.3rem;
+        color: rgba($color-white,.5);
+    }
+
+    &__title {
+        font-family: $font-tertiary;
+        font-size: 2.3rem;
+        letter-spacing: 1.34px;
+        margin-bottom: .7rem;
+    }
+
+    &__body {
+        font-family: $font-secondary;
+        font-size: 1.6rem;
+        color: rgba($color-white,.5);
+    }
+}

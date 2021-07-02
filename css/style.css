@@ -181,6 +181,52 @@ body {
   z-index: -10;
 }
 
+.blog {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.blog__heading {
+  text-align: center;
+  font-size: 4rem;
+}
+.blog__heading::after {
+  content: "";
+  position: relative;
+  height: 3px;
+  width: 10rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #DBA57B;
+}
+.blog__container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+  column-gap: 5rem;
+}
+.blog__image {
+  max-width: 100%;
+  height: auto;
+}
+.blog__date-box {
+  margin-top: 2rem;
+}
+.blog__date {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.blog__title {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 1.34px;
+  margin-bottom: 0.7rem;
+}
+.blog__body {
+  font-family: "Benne", serif;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -499,6 +545,10 @@ body {
   border: none;
   outline: none;
   margin-left: -8rem;
+}
+
+.section-blog {
+  margin-top: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
