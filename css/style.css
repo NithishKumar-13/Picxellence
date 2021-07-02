@@ -12,8 +12,11 @@ html {
 
 body {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.6;
+  background: #0f0e0e;
+  line-height: 1.68;
+  color: #fff;
 }
 
 .header {

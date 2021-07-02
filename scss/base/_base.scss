@@ -12,6 +12,9 @@ html {
 
 body {
     box-sizing: border-box;
+    font-family: $font-primary;
     font-size: $default-font-size;
-    line-height: 1.6;
+    background: rgb(15, 14, 14);
+    line-height: 1.68;
+    color: $color-white;
 }
