@@ -181,6 +181,27 @@ body {
   z-index: -10;
 }
 
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+  margin: 1rem;
+  margin-left: 0;
+  padding: 1rem 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: translateY(-0.5rem);
+  background-position: right center;
+}
+.btn:active {
+  transform: translateY(-0.3rem);
+}
+
 .navbar {
   padding-top: 1.5rem;
   padding-left: 6rem;
