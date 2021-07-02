@@ -76,3 +76,59 @@
         }
     }
 }
+
+
+/////////////////////////////////////////////
+/////// SECTION ACCOMODATION
+.section-accomodation {
+    margin-top: 10rem;
+
+    .accomodation {
+        @include centre-container();
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(20ch,1fr));
+        gap: 4rem;
+
+        &__pic {
+            max-width: 100%;
+            height: auto;
+        }
+
+        &__heading {
+            font-size: 3.5rem;
+        }
+
+        &__subheading {
+            font-size: 1.6rem;
+            color: rgba($color-white,.5);
+        }
+
+        &__features {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-row-gap: 2rem;
+            grid-column-gap: 13rem;
+        }
+
+        &__feature {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            transform: skewX(-12deg);
+            background: linear-gradient(106deg, #4776E6 0%, #8E54E9  75%,#fff 75%);
+            transition: all .4s;
+            cursor: pointer;
+
+            &:hover {
+                transform: skewX(-12deg) translateX(2rem);
+            }
+
+            &__icon {
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+    }
+}

@@ -413,4 +413,50 @@ body {
   letter-spacing: 3px;
 }
 
+.section-accomodation {
+  margin-top: 10rem;
+}
+.section-accomodation .accomodation {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  gap: 4rem;
+}
+.section-accomodation .accomodation__pic {
+  max-width: 100%;
+  height: auto;
+}
+.section-accomodation .accomodation__heading {
+  font-size: 3.5rem;
+}
+.section-accomodation .accomodation__subheading {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.section-accomodation .accomodation__features {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 2rem;
+  grid-column-gap: 13rem;
+}
+.section-accomodation .accomodation__feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transform: skewX(-12deg);
+  background: linear-gradient(106deg, #4776E6 0%, #8E54E9 75%, #fff 75%);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.section-accomodation .accomodation__feature:hover {
+  transform: skewX(-12deg) translateX(2rem);
+}
+.section-accomodation .accomodation__feature__icon {
+  height: 3rem;
+  width: 3rem;
+}
+
 /*# sourceMappingURL=style.css.map */
