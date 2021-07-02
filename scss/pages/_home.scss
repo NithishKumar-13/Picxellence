@@ -132,3 +132,53 @@
         }
     }
 }
+
+
+/////////////////////////////////////////////
+/////// SECTION SUBSCRIPTION
+.section-subscription {
+    margin-top: 10rem;
+    transform: skewY(-4deg);
+    background: linear-gradient(to bottom, rgb(34, 33, 33,.7), rgb(24,23,42,.8)),  url('../../img/subs.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0;
+
+    .subscription {
+        max-width: 80rem;
+        margin: 0 auto;
+        text-align: center;
+        transform: skewY(4deg);
+
+        &__heading {
+            font-size: 3.8rem;
+            font-family: $font-primary;
+            font-weight: 700;
+        }
+
+        &__description {
+            font-family: $font-quadrary;
+            margin: 1.3rem 0;
+            font-size: 2rem;
+            color: rgba($color-white,1);
+        }
+
+        &__input {
+            margin-top: 1.8rem;
+            padding: 1.5rem;
+            width: 35rem;
+            outline: none;
+        }
+
+        &__btn {
+            display: inline-block;
+            background-color: rgb(113, 94, 221);
+            color: $color-white;
+            padding: 1rem 2rem;
+            border: none;
+            outline: none;
+            margin-left: -8rem;
+        }
+    }
+}

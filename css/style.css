@@ -459,4 +459,46 @@ body {
   width: 3rem;
 }
 
+.section-subscription {
+  margin-top: 10rem;
+  transform: skewY(-4deg);
+  background: linear-gradient(to bottom, rgba(34, 33, 33, 0.7), rgba(24, 23, 42, 0.8)), url("../../img/subs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 0;
+}
+.section-subscription .subscription {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+  transform: skewY(4deg);
+}
+.section-subscription .subscription__heading {
+  font-size: 3.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.section-subscription .subscription__description {
+  font-family: "Cardo", serif;
+  margin: 1.3rem 0;
+  font-size: 2rem;
+  color: white;
+}
+.section-subscription .subscription__input {
+  margin-top: 1.8rem;
+  padding: 1.5rem;
+  width: 35rem;
+  outline: none;
+}
+.section-subscription .subscription__btn {
+  display: inline-block;
+  background-color: #715edd;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  margin-left: -8rem;
+}
+
 /*# sourceMappingURL=style.css.map */
