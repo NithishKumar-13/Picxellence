@@ -19,6 +19,30 @@ body {
   color: #fff;
 }
 
+.navbar {
+  padding-top: 1.5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.navbar__list {
+  display: flex;
+}
+.navbar__item {
+  list-style: none;
+}
+.navbar__item:not(:last-child) {
+  margin-right: 3rem;
+}
+.navbar__item:first-child {
+  margin-right: auto;
+}
+.navbar__link {
+  font-family: "Benne", serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
 .header {
   height: 90vh;
   width: 100%;

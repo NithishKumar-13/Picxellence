@@ -1,0 +1,28 @@
+.navbar {
+    padding-top: 1.5rem;
+    @include centre-container();
+ 
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        list-style: none;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        &:first-child {
+            margin-right: auto;
+        }
+
+    }
+
+    &__link {
+        font-family: $font-secondary;
+        text-decoration: none;
+        color: $color-white;
+        font-size: 2rem;
+    }
+}
