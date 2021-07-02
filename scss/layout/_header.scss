@@ -1,0 +1,94 @@
+.header {
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(5, 5, 5, 0.952) 10% , transparent 100%) , url('../../img/hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    position: relative;
+
+    &__title-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    &__icon {
+        background-color: $color-white;
+        display: inline-block;
+        margin: 0 auto;
+        height: 3.5rem;
+        width: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        border-radius: 50%;
+
+        [class^="fas "] {
+            font-size: 1.9rem;
+        }
+    }
+
+    &__primary {
+        font-weight: 400;
+        font-size: 5.5rem;
+        color: $color-white;
+        font-family: $font-quadrary;
+        margin-top: 1rem;
+    }
+
+    &__secondary {
+        font-family: $font-tertiary;
+        color: $color-white;
+        letter-spacing: 8px;
+        font-size: 1.6rem;
+        margin-top: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    &__detail-box {
+       width: 80%;
+       margin: 0 auto;
+       display: flex;
+       line-height: 1.2;
+       
+       & > * {
+           flex-basis: 25%;
+           padding: .8rem 1.7rem;
+       }
+
+       &--1 {
+           background-color: rgba(22, 20, 20, 0.952);
+       }
+
+       &--2 {
+           background-color: rgba(26, 25, 25, 0.719);
+       }
+
+       &--3 {
+           background-color: rgba(24, 23, 23, 0.267);
+       }
+
+       &--4 {
+           background-color: rgba(5, 5, 5, 0.068);
+       }
+
+       &__name {
+           font-family: $font-tertiary;
+           font-size: 2.5rem;
+           color: $color-white;
+       }
+
+       &__description {
+           color: rgba(138, 135, 135, 0.952);
+           text-transform: uppercase;
+           font-family: $font-tertiary;
+           letter-spacing: 2px;
+           font-size: 1.4rem;
+       }
+    }
+}
