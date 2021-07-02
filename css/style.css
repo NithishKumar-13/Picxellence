@@ -19,6 +19,120 @@ body {
   color: #fff;
 }
 
+.adventures {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.adventures__heading--primary {
+  font-family: "Benne", serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  text-align: center;
+}
+.adventures__heading--secondary {
+  font-family: "Saira Condensed", sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+.adventures__grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+  gap: 3rem;
+}
+.adventures .card {
+  position: relative;
+  height: 34rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.adventures .card::before {
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: -20;
+  transition: transform 0.3s;
+}
+.adventures .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  display: none;
+  z-index: -10;
+}
+.adventures .card__content {
+  color: #fff;
+  text-align: center;
+  transform: translateY(100%);
+  transition: all 0.6s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  padding: 1rem;
+}
+.adventures .card__content > *:not(.card__title) {
+  transition: opacity 1.4s;
+  opacity: 0;
+}
+.adventures .card__content > * + * {
+  margin-top: 2rem;
+}
+.adventures .card__title {
+  font-size: 2.2rem;
+}
+.adventures .card__text {
+  font-family: "Cardo", serif;
+  font-size: 1.8rem;
+}
+.adventures .card__btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #0f0f0f;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  background-color: #dba57b;
+  border-radius: 2px;
+  font-size: 1.4rem;
+}
+.adventures .card:hover::before {
+  transform: translateY(-4%);
+  filter: brightness(80%);
+}
+.adventures .card:hover::after {
+  display: block;
+}
+.adventures .card:hover .card__content {
+  transform: translateY(0);
+}
+.adventures .card:hover .card__content > *:not(.card__title) {
+  opacity: 1;
+}
+
+.card--architecture::before {
+  background: linear-gradient(to top, rgba(7, 5, 5, 0.9), transparent), url("../../img/architecture.jpg");
+}
+
+.card--landscape::before {
+  background: linear-gradient(to top, rgba(7, 5, 5, 0.9), transparent), url("../../img/landscape.jpg");
+}
+
+.card--astro::before {
+  background: linear-gradient(to top, rgba(7, 5, 5, 0.9), transparent), url("../../img/astro.jpg");
+}
+
+.card--people::before {
+  background: linear-gradient(to top, rgba(7, 5, 5, 0.9), transparent), url("../../img/people.jpg");
+}
+
 .navbar {
   padding-top: 1.5rem;
   padding-left: 6rem;
