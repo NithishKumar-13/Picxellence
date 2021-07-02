@@ -1,0 +1,144 @@
+.adventures {
+    @include centre-container();
+
+    &__heading {
+
+        &--primary {
+            font-family: $font-secondary;
+            font-weight: 400;
+            font-size: 4.5rem;
+            text-align: center;
+        }
+
+        &--secondary {
+            font-family: $font-tertiary;
+            color: rgba($color-white,.4);
+            font-size: 1.8rem;
+            letter-spacing: 1.2px;
+            text-align: center;
+        }
+    }
+
+    &__grid {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25ch,1fr));
+        gap: 3rem;
+    }
+
+    .card {
+        position: relative;
+        height: 34rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 110%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            z-index: -20;
+            transition: transform .3s;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(
+                to bottom ,
+                hsla(0, 0%, 0%, 0) 0%,
+                hsla(0, 0%, 0%, 0.009) 11.7%,
+                hsla(0, 0%, 0%, 0.034) 22.1%,
+                hsla(0, 0%, 0%, 0.072) 31.2%,
+                hsla(0, 0%, 0%, 0.123) 39.4%,
+                hsla(0, 0%, 0%, 0.182) 46.6%,
+                hsla(0, 0%, 0%, 0.249) 53.1%,
+                hsla(0, 0%, 0%, 0.320) 58.9%,
+                hsla(0, 0%, 0%, 0.394) 64.3%,
+                hsla(0, 0%, 0%, 0.468) 69.3%,
+                hsla(0, 0%, 0%, 0.540) 74.1%,
+                hsla(0, 0%, 0%, 0.607) 78.8%,
+                hsla(0, 0%, 0%, 0.668) 83.6%,
+                hsla(0, 0%, 0%, 0.721) 88.7%,
+                hsla(0, 0%, 0%, 0.762) 94.1%,
+                hsla(0, 0%, 0%, 0.790) 100%
+              );
+            display: none;
+            z-index: -10;
+        }
+
+        &__content {
+            color: $color-white;
+            text-align: center;
+            transform: translateY(100%);
+            transition: all .6s;
+            transition-timing-function:  cubic-bezier(0.19, 1, 0.22, 1);
+            padding: 1rem;
+
+            & > *:not(.card__title) {
+                transition: opacity 1.4s;
+                opacity: 0;
+            }
+
+            & > * + * {
+               margin-top: 2rem;
+            }
+        }
+
+        &__title {
+            font-size: 2.2rem;
+        }
+
+        &__text {
+            font-family: $font-quadrary;
+            font-size: 1.8rem;
+        }
+
+        &__btn {
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(15, 15, 15);
+            font-weight: 600;
+            padding: .3rem .8rem;
+            background-color: rgba($color-sandal,1);
+            border-radius: 2px;
+            font-size: 1.4rem;
+        }
+
+        &:hover {
+           
+            &::before {
+                transform: translateY(-4%);
+                filter: brightness(80%);
+            }
+
+            &::after {
+                display: block;
+            }
+
+            .card__content {
+                transform: translateY(0);
+
+                & > *:not(.card__title) {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+$categories : architecture, landscape, astro, people;
+
+@each $category in $categories {
+    .card--#{$category}::before {
+        background: linear-gradient(to top, rgba(rgb(7, 5, 5),.9), transparent) , url('../../img/#{$category}.jpg');
+    }
+}
