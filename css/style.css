@@ -133,6 +133,54 @@ body {
   background: linear-gradient(to top, rgba(7, 5, 5, 0.9), transparent), url("../../img/people.jpg");
 }
 
+.album {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.album__text {
+  flex: 1 1 60%;
+}
+.album__heading {
+  font-family: "Benne", serif;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.album__body {
+  font-size: 1.7rem;
+  line-height: 1.9;
+  margin: 1.5rem 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+.album__images {
+  flex: 1 0 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.album__pic {
+  width: 74%;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+  border: 1rem solid #fff;
+}
+.album__pic:hover {
+  transform: scale(1.2);
+}
+.album__pic::before {
+  content: "";
+  height: 230rem;
+  width: 150rem;
+  background: purple;
+  position: absolute;
+  z-index: -10;
+}
+
 .navbar {
   padding-top: 1.5rem;
   padding-left: 6rem;
@@ -284,6 +332,10 @@ body {
 
 .section-adventures {
   margin-top: 10rem;
+}
+
+.section-album {
+  margin-top: 15rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+.album {
+    @include centre-container();
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+    &__text {
+        flex: 1 1 60%;
+    }
+    
+    &__heading {
+        font-family: $font-secondary;
+        font-weight: 500;
+        font-size: 5rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+
+    &__body {
+        font-size: 1.7rem;
+        line-height: 1.9;
+        margin: 1.5rem 0;
+        color: rgba($color-white,.5);
+    }
+
+    &__images {
+        flex: 1 0 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__pic {
+        width: 74%;
+        max-width: 100%;
+        height: auto;
+        transition: transform .3s;
+        border: 1rem solid $color-white;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &::before {
+            content: '';
+            height: 230rem;
+            width: 150rem;
+            background: purple;
+            position: absolute;
+            z-index: -10;
+        }
+    }
+}
