@@ -43,6 +43,48 @@ body {
   font-size: 2rem;
 }
 
+.steps {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.steps .step {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+.steps .step__number {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.8rem;
+  height: 2rem;
+  width: 2rem;
+  padding: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.steps .step__description {
+  font-size: 1.6rem;
+  margin-left: 1.7rem;
+  line-height: 1.4;
+}
+.steps .step--3::after {
+  content: "";
+  position: absolute;
+  bottom: -2rem;
+  height: 1px;
+  background-color: #DBA57B;
+  width: 100%;
+}
+
 .header {
   height: 90vh;
   width: 100%;

@@ -1,0 +1,47 @@
+.steps {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(4,30rem);
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   
+    .step {
+        display: flex;
+        align-items: center;
+        font-family: $font-primary;
+        color: rgba($color-white,.8);
+        position: relative;
+
+        &__number {
+            font-family: $font-tertiary;
+            font-size: 1.8rem;
+            height: 2rem;
+            width: 2rem;
+            padding: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid rgba($color-white,.4)
+        }
+
+        &__description {
+            font-size: 1.6rem;
+            margin-left: 1.7rem;
+            line-height: 1.4;
+        }
+
+        &--3 {
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -2rem;
+                height: 1px;
+                background-color: $color-sandal;
+                width: 100%;
+            }
+        }
+    }
+}
