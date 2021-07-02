@@ -338,4 +338,58 @@ body {
   margin-top: 15rem;
 }
 
+.section-testimonial {
+  margin-top: 8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: skewY(-4deg);
+  padding: 4rem 0;
+}
+
+.testimonial {
+  transform: skewY(4deg);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  gap: 3rem;
+  width: 80%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.testimonial:hover .user:not(:hover) {
+  transform: scale(0.89);
+}
+.testimonial .user {
+  background-color: rgba(16, 14, 26, 0.15);
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+.testimonial .user:hover {
+  transform: scale(1.12);
+}
+.testimonial .user__pic {
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+}
+.testimonial .user__pic--1 {
+  border-radius: 40% 60% 70% 30%/40% 50% 60% 50%;
+}
+.testimonial .user__pic--2 {
+  border-radius: 70% 30% 50% 50%/30% 30% 70% 70%;
+}
+.testimonial .user__pic--3 {
+  border-radius: 100% 60% 60% 100%/100% 100% 60% 60%;
+}
+.testimonial .user__review {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+.testimonial .user__name {
+  font-family: "Saira Condensed", sans-serif;
+  color: #DBA57B;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+}
+
 /*# sourceMappingURL=style.css.map */

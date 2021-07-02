@@ -1,7 +1,78 @@
+/////////////////////////////////////////////
+/////// SECTION ADVENTURES
 .section-adventures {
     margin-top: 10rem;
 }
 
+
+/////////////////////////////////////////////
+/////// SECTION ALBUM
 .section-album {
     margin-top: 15rem;
+}
+
+
+/////////////////////////////////////////////
+/////// SECTION TESTIMONIAL
+.section-testimonial {
+    margin-top: 8rem;
+    background-color: rgba($color-white,.1);
+    transform: skewY(-4deg);
+    padding: 4rem 0;
+}
+
+.testimonial {
+    transform: skewY(4deg);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20ch,1fr));
+    gap: 3rem;
+    width: 80%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+    
+    &:hover .user:not(:hover) {
+        transform: scale(.89);
+    }
+
+    .user {
+        background-color: rgba(16, 14, 26, 0.15);
+        padding: 2rem;
+        text-align: center;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.12);
+        }
+
+        &__pic {
+           width: 13rem;
+           height: 13rem;
+           object-fit: cover;
+           
+           &--1 {
+               border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+           }
+
+           &--2 {
+               border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+           }
+
+           &--3 {
+               border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+           }
+        }
+
+        &__review {
+            font-size: 1.6rem;
+            margin: 1rem 0;
+        }
+
+        &__name {
+            font-family: $font-tertiary;
+            color: $color-sandal;
+            font-size: 1.6rem;
+            letter-spacing: 3px;
+        }
+    }
 }
