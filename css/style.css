@@ -222,9 +222,9 @@ body {
   margin-bottom: 0.7rem;
 }
 .blog__body {
-  font-family: "Benne", serif;
-  font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  font-family: "Cardo", serif;
+  font-size: 1.7rem;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .btn {
