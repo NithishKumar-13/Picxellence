@@ -315,6 +315,57 @@ body {
   width: 100%;
 }
 
+.footer {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 60% auto;
+  gap: 3rem;
+  height: 40rem;
+}
+.footer__content-box {
+  padding-left: 5rem;
+  padding-top: 3rem;
+}
+.footer__right {
+  position: relative;
+  background-color: #d4aa8a96;
+}
+.footer__heading {
+  font-size: 4rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+.footer__heading::after {
+  content: "";
+  display: block;
+  background-color: #DBA57B;
+  height: 0.4rem;
+  width: 15%;
+  position: absolute;
+  bottom: -1rem;
+}
+.footer__contact-container {
+  margin-top: 5rem;
+}
+.footer__contact-container > * + * {
+  margin: 2rem 0;
+}
+.footer__contact-title {
+  font-size: 1.8rem;
+  color: #DBA57B;
+}
+.footer__contact-description {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer__img {
+  position: absolute;
+  top: 15%;
+  left: -20%;
+  height: 32rem;
+  max-width: 100%;
+}
+
 .header {
   height: 90vh;
   width: 100%;

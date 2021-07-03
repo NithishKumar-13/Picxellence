@@ -1,0 +1,59 @@
+.footer {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 60% auto;
+    gap: 3rem;
+    height: 40rem;
+
+    &__content-box {
+        padding-left: 5rem;
+        padding-top: 3rem;
+    }
+
+    &__right {
+        position: relative;
+        background-color: #d4aa8a96;
+    }
+
+    &__heading {
+        font-size: 4rem;
+        margin-bottom: 1.2rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: $color-sandal;
+            height: .4rem;
+            width: 15%;
+            position: absolute;
+            bottom: -1rem;
+        }
+    }
+
+    &__contact-container {
+        margin-top: 5rem;
+
+        & > * + * {
+            margin: 2rem 0;
+        }
+    }
+
+    &__contact-title {
+        font-size: 1.8rem;
+        color: $color-sandal;
+    }
+
+    &__contact-description {
+        font-size: 1.6rem;
+        color: rgba($color-white,.5);
+    }
+
+    &__img {
+        position: absolute;
+        top: 15%;
+        left: -20%;
+        height: 32rem;
+        max-width: 100%;
+    }
+}
