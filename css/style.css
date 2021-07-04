@@ -389,7 +389,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.header__icon {
+.header__icon-box {
   background-color: #fff;
   display: inline-block;
   margin: 0 auto;
@@ -400,9 +400,6 @@ body {
   align-items: center;
   padding: 3rem;
   border-radius: 50%;
-}
-.header__icon [class^="fas "] {
-  font-size: 1.9rem;
 }
 .header__primary {
   font-weight: 400;

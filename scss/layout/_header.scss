@@ -16,7 +16,7 @@
         text-align: center;
     }
 
-    &__icon {
+    &__icon-box {
         background-color: $color-white;
         display: inline-block;
         margin: 0 auto;
@@ -27,10 +27,6 @@
         align-items: center;
         padding: 3rem;
         border-radius: 50%;
-
-        [class^="fas "] {
-            font-size: 1.9rem;
-        }
     }
 
     &__primary {
