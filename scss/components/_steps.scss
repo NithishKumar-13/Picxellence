@@ -7,6 +7,10 @@
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    @include respond(phone) {
+        display: none;
+    }
    
     .step {
         display: flex;

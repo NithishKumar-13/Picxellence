@@ -5,20 +5,40 @@
     gap: 3rem;
     height: 40rem;
 
+    @include respond(phone) {
+        margin-top: 7rem;
+        grid-template-columns: 1fr;
+    }
+
     &__content-box {
         padding-left: 5rem;
         padding-top: 3rem;
+
+        @include respond(phone) {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            text-align: center;
+        }
     }
 
     &__right {
         position: relative;
         background-color: #d4aa8a96;
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__heading {
         font-size: 4rem;
         margin-bottom: 1.2rem;
         position: relative;
+
+        @include respond(phone) {
+            line-height: 1.3;
+            font-size: 4.2rem;
+        }
 
         &::after {
             content: '';
@@ -28,6 +48,10 @@
             width: 15%;
             position: absolute;
             bottom: -1rem;
+
+            @include respond(phone) {
+                right: 16rem
+            }
         }
     }
 

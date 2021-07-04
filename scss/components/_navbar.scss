@@ -1,6 +1,10 @@
 .navbar {
     padding-top: 1.5rem;
     @include centre-container();
+
+    @include respond(phone) {
+        display: none;
+    }
  
     &__list {
         display: flex;

@@ -9,6 +9,11 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   box-sizing: border-box;
@@ -28,6 +33,11 @@ body {
   font-weight: 400;
   font-size: 4.5rem;
   text-align: center;
+}
+@media (max-width: 37.5em) {
+  .adventures__heading--primary {
+    font-size: 3.5rem;
+  }
 }
 .adventures__heading--secondary {
   font-family: "Saira Condensed", sans-serif;
@@ -140,8 +150,20 @@ body {
   flex-wrap: wrap;
   gap: 5rem;
 }
+@media (max-width: 37.5em) {
+  .album {
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 .album__text {
   flex: 1 1 60%;
+}
+@media (max-width: 37.5em) {
+  .album__text {
+    order: 2;
+  }
 }
 .album__heading {
   font-family: "Benne", serif;
@@ -149,6 +171,11 @@ body {
   font-size: 5rem;
   line-height: 1.2;
   margin-bottom: 2rem;
+}
+@media (max-width: 37.5em) {
+  .album__heading {
+    font-size: 4rem;
+  }
 }
 .album__body {
   font-size: 1.7rem;
@@ -161,6 +188,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 37.5em) {
+  .album__images {
+    order: 1;
+  }
 }
 .album__pic {
   width: 74%;
@@ -185,6 +217,12 @@ body {
   width: 75%;
   margin: 0 auto;
 }
+@media (max-width: 37.5em) {
+  .blog {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .blog__heading {
   text-align: center;
   font-size: 4rem;
@@ -193,7 +231,13 @@ body {
   margin-top: 4rem;
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+}
+@media (max-width: 37.5em) {
+  .blog__container {
+    padding: 0 1rem;
+    grid-row-gap: 5rem;
+  }
 }
 .blog__card {
   background-color: #fff;
@@ -221,6 +265,11 @@ body {
   font-family: "Benne", serif;
   font-weight: 600;
 }
+@media (max-width: 37.5em) {
+  .blog__body {
+    text-align: center;
+  }
+}
 .blog__post {
   max-width: 100%;
   height: 25rem;
@@ -231,6 +280,11 @@ body {
   font-size: 1.5rem;
   color: #333;
   font-weight: 600;
+}
+@media (max-width: 37.5em) {
+  .blog__text {
+    font-size: 1.6rem;
+  }
 }
 
 .btn {
@@ -258,6 +312,11 @@ body {
   padding-top: 1.5rem;
   padding-left: 6rem;
   padding-right: 6rem;
+}
+@media (max-width: 37.5em) {
+  .navbar {
+    display: none;
+  }
 }
 .navbar__list {
   display: flex;
@@ -287,6 +346,11 @@ body {
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+@media (max-width: 37.5em) {
+  .steps {
+    display: none;
+  }
 }
 .steps .step {
   display: flex;
@@ -328,18 +392,42 @@ body {
   gap: 3rem;
   height: 40rem;
 }
+@media (max-width: 37.5em) {
+  .footer {
+    margin-top: 7rem;
+    grid-template-columns: 1fr;
+  }
+}
 .footer__content-box {
   padding-left: 5rem;
   padding-top: 3rem;
+}
+@media (max-width: 37.5em) {
+  .footer__content-box {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+  }
 }
 .footer__right {
   position: relative;
   background-color: #d4aa8a96;
 }
+@media (max-width: 37.5em) {
+  .footer__right {
+    display: none;
+  }
+}
 .footer__heading {
   font-size: 4rem;
   margin-bottom: 1.2rem;
   position: relative;
+}
+@media (max-width: 37.5em) {
+  .footer__heading {
+    line-height: 1.3;
+    font-size: 4.2rem;
+  }
 }
 .footer__heading::after {
   content: "";
@@ -349,6 +437,11 @@ body {
   width: 15%;
   position: absolute;
   bottom: -1rem;
+}
+@media (max-width: 37.5em) {
+  .footer__heading::after {
+    right: 16rem;
+  }
 }
 .footer__contact-container {
   margin-top: 5rem;
@@ -458,6 +551,11 @@ body {
 .section-album {
   margin-top: 15rem;
 }
+@media (max-width: 37.5em) {
+  .section-album {
+    margin-top: 10rem;
+  }
+}
 
 .section-testimonial {
   margin-top: 8rem;
@@ -520,8 +618,15 @@ body {
   padding-left: 6rem;
   padding-right: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
   gap: 4rem;
+}
+@media (max-width: 37.5em) {
+  .section-accomodation .accomodation {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+  }
 }
 .section-accomodation .accomodation__pic {
   max-width: 100%;
@@ -530,9 +635,20 @@ body {
 .section-accomodation .accomodation__heading {
   font-size: 3.5rem;
 }
+@media (max-width: 37.5em) {
+  .section-accomodation .accomodation__heading {
+    line-height: 1.3;
+    margin-bottom: 3rem;
+  }
+}
 .section-accomodation .accomodation__subheading {
-  font-size: 1.6rem;
+  font-size: 1.65rem;
   color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 37.5em) {
+  .section-accomodation .accomodation__subheading {
+    font-size: 1.8rem;
+  }
 }
 .section-accomodation .accomodation__features {
   margin-top: 4rem;
@@ -540,6 +656,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 2rem;
   grid-column-gap: 13rem;
+}
+@media (max-width: 37.5em) {
+  .section-accomodation .accomodation__features {
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 .section-accomodation .accomodation__feature {
   display: flex;
@@ -550,6 +674,11 @@ body {
   background: linear-gradient(106deg, #4776E6 0%, #8E54E9 75%, #fff 75%);
   transition: all 0.4s;
   cursor: pointer;
+}
+@media (max-width: 37.5em) {
+  .section-accomodation .accomodation__feature {
+    font-size: 1.8rem;
+  }
 }
 .section-accomodation .accomodation__feature:hover {
   transform: skewX(-12deg) translateX(2rem);
@@ -579,17 +708,35 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
+@media (max-width: 37.5em) {
+  .section-subscription .subscription__heading {
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+}
 .section-subscription .subscription__description {
   font-family: "Cardo", serif;
   margin: 1.3rem 0;
   font-size: 2rem;
   color: white;
 }
+@media (max-width: 37.5em) {
+  .section-subscription .subscription__description {
+    padding: 1rem;
+    font-size: 2.12rem;
+  }
+}
 .section-subscription .subscription__input {
   margin-top: 1.8rem;
   padding: 1.5rem;
   width: 35rem;
   outline: none;
+}
+@media (max-width: 37.5em) {
+  .section-subscription .subscription__input {
+    width: 30rem;
+    padding: 1.2rem;
+  }
 }
 .section-subscription .subscription__btn {
   display: inline-block;
@@ -599,6 +746,11 @@ body {
   border: none;
   outline: none;
   margin-left: -8rem;
+}
+@media (max-width: 37.5em) {
+  .section-subscription .subscription__btn {
+    padding: 0.7rem 1rem;
+  }
 }
 
 .section-blog {

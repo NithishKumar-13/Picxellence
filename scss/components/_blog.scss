@@ -2,6 +2,11 @@
     width: 75%;
     margin: 0 auto;
     //border: 1px solid red;    
+
+    @include respond(phone) {
+        width: 90%;
+        margin: 0 auto;
+    }
     
     &__heading {
         text-align: center;
@@ -12,7 +17,13 @@
         margin-top: 4rem;
         display: grid;
         gap: 3rem;
-        grid-template-columns: repeat(auto-fit,minmax(20ch,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(25ch,1fr));
+
+        @include respond(phone) {
+          //  border: 1px solid red;
+            padding: 0 1rem;
+            grid-row-gap: 5rem;
+        }
     }
 
     &__card {
@@ -47,7 +58,9 @@
     }
 
     &__body {
-
+        @include respond(phone) {
+            text-align: center;
+        }
     }
 
     &__post {
@@ -61,5 +74,9 @@
         font-size: 1.5rem;
         color: $color-black;
         font-weight: 600;
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+        }
     }
 }

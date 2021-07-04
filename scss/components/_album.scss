@@ -4,8 +4,18 @@
     flex-wrap: wrap;
     gap: 5rem;
 
+    @include respond(phone) {
+        text-align: center;
+        padding-left: 3rem;
+        padding-right: 3rem
+    }
+
     &__text {
         flex: 1 1 60%;
+
+        @include respond(phone) {
+            order: 2;
+        }
     }
     
     &__heading {
@@ -14,6 +24,10 @@
         font-size: 5rem;
         line-height: 1.2;
         margin-bottom: 2rem;
+
+        @include respond(phone) {
+            font-size: 4rem;
+        }
     }
 
     &__body {
@@ -28,6 +42,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include respond(phone) {
+            order: 1;
+        }
     }
 
     &__pic {
