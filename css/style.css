@@ -418,6 +418,11 @@ body {
   gap: 3rem;
   height: 40rem;
 }
+@media (max-width: 56.25em) {
+  .footer {
+    gap: 0;
+  }
+}
 @media (max-width: 37.5em) {
   .footer {
     margin-top: 7rem;

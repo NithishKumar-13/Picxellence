@@ -5,6 +5,10 @@
     gap: 3rem;
     height: 40rem;
 
+    @include respond(tab-port) {
+        gap: 0;
+    }
+
     @include respond(phone) {
         margin-top: 7rem;
         grid-template-columns: 1fr;
