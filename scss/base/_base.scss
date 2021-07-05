@@ -26,10 +26,6 @@ body {
     line-height: 1.68;
     color: $color-white;
 
-    @include respond(tab-port) {
-        background-color: red;
-    }
-    
     @include respond(phone) {
         background-color: green;
     }

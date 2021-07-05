@@ -28,11 +28,6 @@ body {
   line-height: 1.68;
   color: #fff;
 }
-@media (max-width: 56.25em) {
-  body {
-    background-color: red;
-  }
-}
 @media (max-width: 37.5em) {
   body {
     background-color: green;
