@@ -148,7 +148,7 @@ body {
   padding-right: 6rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 2rem;
 }
 @media (max-width: 37.5em) {
   .album {
@@ -157,12 +157,13 @@ body {
     padding-right: 3rem;
   }
 }
-.album__text {
-  flex: 1 1 60%;
+.album > div {
+  flex: max(50rem, 100% / 2 - 4rem);
 }
 @media (max-width: 37.5em) {
   .album__text {
-    order: 2;
+    order: 10;
+    margin-top: 5rem;
   }
 }
 .album__heading {
@@ -184,14 +185,13 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 .album__images {
-  flex: 1 0 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 37.5em) {
   .album__images {
-    order: 1;
+    order: 2;
   }
 }
 .album__pic {
