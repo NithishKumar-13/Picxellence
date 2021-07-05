@@ -647,6 +647,11 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
   gap: 4rem;
 }
+@media (max-width: 56.25em) {
+  .section-accomodation .accomodation {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 37.5em) {
   .section-accomodation .accomodation {
     padding-left: 3rem;

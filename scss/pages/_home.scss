@@ -93,6 +93,10 @@
         grid-template-columns: repeat(auto-fit,minmax(35ch,1fr));
         gap: 4rem;
 
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+        }
+
         @include respond(phone) {
             padding-left: 3rem;
             padding-right: 3rem;
