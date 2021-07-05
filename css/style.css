@@ -618,7 +618,7 @@ body {
   padding-left: 6rem;
   padding-right: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
   gap: 4rem;
 }
 @media (max-width: 37.5em) {
@@ -674,10 +674,12 @@ body {
   background: linear-gradient(106deg, #4776E6 0%, #8E54E9 75%, #fff 75%);
   transition: all 0.4s;
   cursor: pointer;
+  width: 30rem;
 }
 @media (max-width: 37.5em) {
   .section-accomodation .accomodation__feature {
     font-size: 1.8rem;
+    margin: 0 auto;
   }
 }
 .section-accomodation .accomodation__feature:hover {
