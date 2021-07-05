@@ -8,6 +8,10 @@
 
 html {
     font-size: 62.5%;
+
+    @include respond(tab-port) {
+        font-size: 56.25%;
+    }
     
     @include respond(phone) {
         font-size: 50%;
@@ -21,4 +25,12 @@ body {
     background: rgb(15, 14, 14);
     line-height: 1.68;
     color: $color-white;
+
+    @include respond(tab-port) {
+        background-color: red;
+    }
+    
+    @include respond(phone) {
+        background-color: green;
+    }
 }

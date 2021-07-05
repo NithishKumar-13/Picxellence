@@ -9,6 +9,11 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 @media (max-width: 37.5em) {
   html {
     font-size: 50%;
@@ -22,6 +27,16 @@ body {
   background: #0f0e0e;
   line-height: 1.68;
   color: #fff;
+}
+@media (max-width: 56.25em) {
+  body {
+    background-color: red;
+  }
+}
+@media (max-width: 37.5em) {
+  body {
+    background-color: green;
+  }
 }
 
 .adventures {
@@ -339,13 +354,24 @@ body {
 
 .steps {
   position: absolute;
-  left: 6rem;
   bottom: 0;
+  left: 1rem;
   display: grid;
-  grid-template-columns: repeat(4, 30rem);
+  grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 56.25em) {
+  .steps {
+    max-width: 100%;
+    margin-left: 1rem;
+  }
 }
 @media (max-width: 37.5em) {
   .steps {
