@@ -170,6 +170,12 @@ body {
 .album > div {
   flex: max(50rem, 100% / 2 - 4rem);
 }
+@media (max-width: 56.25em) {
+  .album__text {
+    margin-top: -4rem;
+    margin-bottom: 4rem;
+  }
+}
 @media (max-width: 37.5em) {
   .album__text {
     order: 10;
@@ -210,6 +216,11 @@ body {
   height: auto;
   transition: transform 0.3s;
   border: 1rem solid #fff;
+}
+@media (max-width: 56.25em) {
+  .album__pic {
+    height: 30rem;
+  }
 }
 .album__pic:hover {
   transform: scale(1.2);
