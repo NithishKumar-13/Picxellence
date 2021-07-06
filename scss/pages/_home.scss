@@ -145,12 +145,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem;
+            padding: .7rem 1rem;
             transform: skewX(-12deg);
             background: linear-gradient(106deg, #4776E6 0%, #8E54E9  75%,#fff 75%);
             transition: all .4s;
             cursor: pointer;
-            width: 30rem;
+            width: 23rem;
 
             @include respond(phone) {
                 font-size: 1.8rem;

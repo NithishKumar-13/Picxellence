@@ -711,12 +711,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
   transform: skewX(-12deg);
   background: linear-gradient(106deg, #4776E6 0%, #8E54E9 75%, #fff 75%);
   transition: all 0.4s;
   cursor: pointer;
-  width: 30rem;
+  width: 23rem;
 }
 @media (max-width: 37.5em) {
   .section-accomodation .accomodation__feature {
