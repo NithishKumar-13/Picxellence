@@ -30,3 +30,20 @@ body {
         background-color: green;
     }
 }
+
+::-webkit-scrollbar {
+    width: 1.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darken($color-sandal,5);
+    border-radius: .6rem;
+
+    &:hover {
+        background-color: darken($color-sandal,10);
+    }
+}
