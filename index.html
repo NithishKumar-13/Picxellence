@@ -12,14 +12,27 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
-            <ul class="navbar__list">
-               <li class="navbar__item"><a href="#" class="navbar__link">Picxellence</a></li>
-               <li class="navbar__item"><a href="#" class="navbar__link">Photgraphers</a></li>
-               <li class="navbar__item"><a href="#" class="navbar__link">Workespace</a></li>
-               <li class="navbar__item"><a href="#" class="navbar__link">Login</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <label for="menu_checkbox" class="navbar__hamburger">
+               
+                <div class="navbar__icon navbar__icon--1"></div>
+                <div class="navbar__icon navbar__icon--2"></div>
+                <div class="navbar__icon navbar__icon--3"></div>
+            </label>
+           <input type="checkbox" id="menu_checkbox" class="navbar__checkbox" />
+           <aside class="aside">
+               <nav class="navbar">
+                   <ul class="navbar__list">
+                       <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+                       <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
+                       <li class="navbar__item"><a href="#" class="navbar__link">Contact</a></li>
+                       <li class="navbar__item"><a href="#" class="navbar__link">Service</a></li>
+                   </ul>
+               </nav>
+           </aside>
+           
+          
+        </div>
         <div class="header__title-box">
             <div class="header__icon-box">
                 <img class="header__icon" src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png"/>
