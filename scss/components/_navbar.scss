@@ -55,16 +55,28 @@
         border-radius: 50%;
         display: block;
     }
-}
 
-.aside {
-    height: 100vh;
-    width: 20vw;
-    background-color: $color-white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    transform: translateX(-100%);
-    transition: transform .3s;
+    & nav {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        & > * + * {
+            margin-top: 5rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: $font-quadrary;
+        font-weight: 600;
+        font-size: 3rem;
+        color: #143240;
+    }
 }
