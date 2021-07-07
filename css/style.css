@@ -592,6 +592,9 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.header__icon {
+  height: 3rem;
+}
 .header__icon-box {
   background-color: #fff;
   display: inline-block;

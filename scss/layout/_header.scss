@@ -16,6 +16,10 @@
         text-align: center;
     }
 
+    &__icon {
+        height: 3rem;
+    }
+
     &__icon-box {
         background-color: $color-white;
         display: inline-block;
