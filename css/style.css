@@ -258,7 +258,7 @@ body {
 .aside {
   height: 100vh;
   width: 20vw;
-  background-color: #fff;
+  background-color: #b69167;
   position: fixed;
   top: 0;
   left: 0;
@@ -417,6 +417,7 @@ body {
   align-items: center;
 }
 .navbar__list {
+  list-style: none;
   display: flex;
   flex-direction: column;
 }
