@@ -2,10 +2,6 @@
     padding-top: 1.5rem;
     @include centre-container();
 
-    @include respond(phone) {
-        display: none;
-    }
-
     &__checkbox {
         position: absolute;
         top: 50%;
@@ -26,8 +22,8 @@
         width: .5rem;
         height: .5rem;
         background-color: #143240;
-        border-radius: 10px;
-        width: 20px;
+        border-radius: 1rem;
+        width: 2rem;
 
         &--1 {
             transform: translateX(10px);

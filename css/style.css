@@ -367,11 +367,6 @@ body {
   padding-left: 6rem;
   padding-right: 6rem;
 }
-@media (max-width: 37.5em) {
-  .navbar {
-    display: none;
-  }
-}
 .navbar__checkbox {
   position: absolute;
   top: 50%;
@@ -390,8 +385,8 @@ body {
   width: 0.5rem;
   height: 0.5rem;
   background-color: #143240;
-  border-radius: 10px;
-  width: 20px;
+  border-radius: 1rem;
+  width: 2rem;
 }
 .navbar__icon--1 {
   transform: translateX(10px);
