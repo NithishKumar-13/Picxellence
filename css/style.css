@@ -55,6 +55,11 @@ body {
   background-color: #d08a53;
 }
 
+::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+}
+
 .adventures {
   padding-left: 6rem;
   padding-right: 6rem;

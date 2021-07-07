@@ -51,3 +51,8 @@ body {
         background-color: darken($color-sandal,10);
     }
 }
+
+::placeholder {
+    font-family: $font-primary;
+    font-size: 1.4rem;
+}
