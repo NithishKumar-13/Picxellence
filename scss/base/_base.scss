@@ -29,10 +29,6 @@ body {
     background: rgb(15, 14, 14);
     line-height: 1.68;
     color: $color-white;
-
-    @include respond(phone) {
-        background-color: green;
-    }
 }
 
 ::-webkit-scrollbar {
