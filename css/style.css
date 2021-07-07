@@ -816,6 +816,8 @@ body {
   background-size: cover;
   background-position: center;
   padding: 8rem 0;
+  max-height: 50rem;
+  background-attachment: fixed;
 }
 .section-subscription .subscription {
   max-width: 80rem;
