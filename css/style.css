@@ -55,6 +55,11 @@ body {
   font-size: 1.4rem;
 }
 
+::selection {
+  background-color: #6d55c7;
+  color: #fff;
+}
+
 .adventures {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -414,6 +419,7 @@ body {
   background-color: #fff;
   border-radius: 50%;
   display: block;
+  cursor: pointer;
 }
 .navbar nav {
   height: 100%;
