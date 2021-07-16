@@ -52,3 +52,8 @@ body {
     font-family: $font-primary;
     font-size: 1.4rem;
 }
+
+::selection {
+    background-color: #6d55c7;
+    color: #fff;
+}
