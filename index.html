@@ -34,7 +34,7 @@
     <title>Picxellence</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="navbar">
             <label for="menu_checkbox" class="navbar__hamburger">
                 <div class="navbar__icon navbar__icon--1"></div>
@@ -45,10 +45,11 @@
            <aside class="aside">
                <nav>
                    <ul class="navbar__list">
-                       <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
-                       <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
-                       <li class="navbar__item"><a href="#" class="navbar__link">Contact</a></li>
-                       <li class="navbar__item"><a href="#" class="navbar__link">Service</a></li>
+                       <li class="navbar__item"><a href="#header" class="navbar__link">Home</a></li>
+                       <li class="navbar__item"><a href="#blog" class="navbar__link">Blog</a></li>
+                       <li class="navbar__item"><a href="#testimonial" class="navbar__link">Testimonial</a></li>
+                       <li class="navbar__item"><a href="#services" class="navbar__link">Services</a></li>
+                       <li class="navbar__item"><a href="#contact" class="navbar__link">Contact</a></li>
                    </ul>
                </nav>
            </aside>
@@ -147,7 +148,7 @@
             </div>
         </div>
     </section>
-    <section class="section-testimonial">
+    <section id="testimonial" class="section-testimonial">
         <div class="testimonial">
             <div class="user user--1">
                 <img src="img/user-1.jpeg" alt="Emma White" class="user__pic user__pic--1">
@@ -166,7 +167,7 @@
             </div>
         </div>
     </section>
-    <section class="section-accomodation">
+    <section id="services" class="section-accomodation">
         <div class="accomodation">
             <div class="accomodation__img">
                 <img src="img/outdoors.jpg" alt="backyard at night" class="accomodation__pic">
@@ -211,7 +212,7 @@
             <button class="subscription__btn">Subscribe</button>
         </div>
     </section>
-    <section class="section-blog">
+    <section id="blog" class="section-blog">
         <div class="blog">
             <h4 class="blog__heading">Our blog</h4>
             <div class="blog__container">
@@ -248,7 +249,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="footer__left">
             <div class="footer__content-box">
             <h4 class="footer__heading">Get in touch with us</h4>
